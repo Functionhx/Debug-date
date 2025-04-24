@@ -9,7 +9,7 @@
    
 2. 库找不到，没安装，依赖有问题
 
-2.1.[rosdep](https://fishros.org.cn/forum/topic/2124/rosdep%E6%98%AF%E4%BB%80%E4%B9%88-%E6%80%8E%E4%B9%88%E7%94%A8)
+2.1.[rosdep](https://fishros.org.cn/forum/topic/2124/rosdep%E6%98%AF%E4%BB%80%E4%B9%88-%E6%80%8E%E4%B9%88%E7%94%A8) 下载国外镜像，可能有问题
 ```python
 # 安装rosdep-noetic
 sudo apt-get install python3-rosdep
@@ -17,6 +17,16 @@ sudo apt-get install python3-rosdep
 sudo rosdep init
 # 类似sudo apt-get update
 rosdep update
+```
+2.2 [rosdepc](https://zhuanlan.zhihu.com/p/398754989) 这是鱼香ros做的gitee版
+```python
+# 安装rosdep-noetic
+sudo apt-get install python3-pip  # 若无pip工具
+sudo pip install rosdepc
+# 初次使用
+sudo rosdepc init
+# 类似sudo apt-get update
+rosdepc update
 ```
 ## 通信
 **串口连接不上:**
