@@ -6,8 +6,10 @@
 
 ## 编译
 1. Libevent报错--源码下载---直接编译---CMAKE要重新学习
+   
 2. 库找不到，没安装，依赖有问题
-1.[rosdep](https://fishros.org.cn/forum/topic/2124/rosdep%E6%98%AF%E4%BB%80%E4%B9%88-%E6%80%8E%E4%B9%88%E7%94%A8)
+
+2.1.[rosdep](https://fishros.org.cn/forum/topic/2124/rosdep%E6%98%AF%E4%BB%80%E4%B9%88-%E6%80%8E%E4%B9%88%E7%94%A8)
 ```python
 # 安装rosdep-noetic
 sudo apt-get install python3-rosdep
