@@ -1,7 +1,10 @@
 # Debug-date
 ## 导航调车日志
 ## 常用debug命令
-
+```cpp
+rosrun rqt_tf_tree rqt_tf_tree
+rosrun rqt_configure rqt_configure
+```
 ## 局部规划器插件流程
 
 ## 编译
