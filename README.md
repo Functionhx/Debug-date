@@ -12,6 +12,8 @@ rosrun rqt_configure rqt_configure
    
 2. 库找不到，没安装，依赖有问题
 
+不能跨包include，除非会写cmake 
+
 3. 库没安装
 
 2.1.[rosdep](https://fishros.org.cn/forum/topic/2124/rosdep%E6%98%AF%E4%BB%80%E4%B9%88-%E6%80%8E%E4%B9%88%E7%94%A8) 下载国外镜像，可能有问题
