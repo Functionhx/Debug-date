@@ -5,6 +5,24 @@
 rosrun rqt_tf_tree rqt_tf_tree
 rosrun rqt_configure rqt_configure
 ```
+```
+rqt
+rqt_graph
+```
+```
+rostopic list
+rostopic echo <ros_topic_name>
+rostopic info <ros_topic_name>
+rosservice list
+rosaction list
+```
+```
+rostopic pub -r 10 /cmd_vel tab tab tab
+```
+```
+rosnode list
+rosnode info <node_name>
+```
 ## 局部规划器插件流程
 
 ## 编译
