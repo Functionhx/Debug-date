@@ -23,7 +23,11 @@ rostopic pub -r 10 /cmd_vel tab tab tab
 rosnode list
 rosnode info <node_name>
 ```
-## 局部规划器插件流程
+```shell
+rosbag reindex xxxx.bagxxxx
+rosbag fix xxxxx.bag.activte test.bag
+rosplay play -r 10 xxx.bag
+```
 
 ## 编译
 1. Libevent报错--源码下载---直接编译---CMAKE要重新学习
@@ -60,18 +64,23 @@ rosdepc update
 
 **雷达连接不上**
 1. 以太网网络配置
-2. ws_livox-config
+2. ws_livox-config：雷达IP和本机IP是否正确
+3. 解决方式：移除连接配置
 
 **打点导航不动**
 1. 检查雷达SLAM算法启动是否成功
 2. 雷达扫描的地图是否加载成功
-3. 
+3. 检查电控是否一直在发点
 **导航抖动**
 1.数组越界嘿嘿
 
-**和电控通信**
+**和电控校对通信**
 1.收发数据，查看有无问题
 2.检查数据包组成:
 3.CRC校验和计算，data_len放在前面，checksum最好打包成内联函数
 
+## 局部规划器插件
+一种比较愚蠢的方式，拒绝，请学习Fast-planner或者尝试重写move_base
 
+## TODO:
+放弃move_base直接转向ROS2，
